@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Tool for Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Quiz Game</h1>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div id="timer"></div>
+        <div id="question" class="animated"></div>
+        <input type="number" id="answer" placeholder="Your answer" class="animated-input"/>
+        <button id="submit-btn" onclick="checkAnswer()">Submit</button>
+        <div id="feedback" class="animated-feedback"></div>
+        <div id="result" class="result"></div>
+    </div>
+
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="incorrect-sound" src="incorrect.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
